@@ -1,13 +1,28 @@
+# Dependencies & builds
 node_modules/
-.env
-*.env
-server/.env
-client/.env
 dist/
 coverage/
+
+# Environment and secret files
+.env
+.env.*
+*.env
+agent/.env
+server/.env
+client/.env
+*.pem
+*.key
+
+# Python virtual environment & cache
+.venv/
+agent/.venv/
+venv/
+__pycache__/
+agent/__pycache__/
+*.pyc
+
+# Project data & logs
 .dpp_data/
 server/.dpp_data/
-agent/.venv/
-agent/__pycache__/
 *.log
 .DS_Store
